@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Online Book-Shop</title>
+</head>
+
+<body>
+    <!-- simple container for aligning and for centering -->
+    <div class="container">
+        <!-- the block for list of products -->
+        <h1 class="block-title">Our best books</h1>
+        <div class="products-block">
+            <!-- block for a specific product -->
+            <div class="product">
+                <!-- element responsible for photo of product  -->
+                <img src="./images/1984.jpg" alt="1984" class="product-photo">
+                <!-- element responsible for name of product  -->
+                <span class="product-name">1984</span>
+                <!-- element responsible for price of product  -->
+                <span class="product-price">$10.50</span>
+            </div>
+            <!-- block for a specific product -->
+            <div class="product">
+                <!-- element responsible for photo of product  -->
+                <img src="./images/Beyound good and evil.jpg" alt="Beyound good and evil" class="product-photo">
+                <!-- element responsible for name of product  -->
+                <span class="product-name">Beyound good and evil</span>
+                <!-- element responsible for price of product  -->
+                <span class="product-price">$12.90</span>
+            </div>
+            <!-- block for a specific product -->
+            <div class="product">
+                <!-- element responsible for photo of product  -->
+                <img src="./images/Crime and punishment.jpg" alt="Crime and punishment" class="product-photo">
+                <!-- element responsible for name of product  -->
+                <span class="product-name">Crime and punishment</span>
+                <!-- element responsible for price of product  -->
+                <span class="product-price">$21.80</span>
+            </div>
+            <!-- block for a specific product -->
+            <div class="product">
+                <!-- element responsible for photo of product  -->
+                <img src="./images/Portraint of Dorian Gray.jpg" alt="Portraint of Dorian Gray" class="product-photo">
+                <!-- element responsible for name of product  -->
+                <span class="product-name">Portraint of Dorian Gray</span>
+                <!-- element responsible for price of product  -->
+                <span class="product-price">$22.00</span>
+            </div>
+        </div>
+
+        <!-- block for adding products to cart -->
+        <div class="action-block">
+            <!-- product types -->
+            <select name="select" id="select-id" class="product-dropdown">
+                <option value="">Choose book</option>
+                <option value="1984">1984</option>
+                <option value="Beyound good and evil">Beyound good and evil</option>
+                <option value="Crime and punishment">Crime and punishment</option>
+                <option value="Portraint of Dorian Gray">Portraint of Dorian Gray</option>
+            </select>
+            <!-- amount of specific product -->
+            <input type="number" id="product-number" class="product-number" min="1" max="20" placeholder=".pcs">
+            <!-- button which is responsible for adding product to cart -->
+            <button id="add-to-cart-button" class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <!--end of block for adding products to cart -->
+
+
+        <!-- block for added to cart products -->
+        <div id="cart-block" class="cart-block">
+            <!-- block for added to cart products -->
+            <ul id="cart-table" class="cart-table">
+
+                <li class="cart-product">
+                    <span class="cart-product-name">Book</span>
+                    <span class="cart-product-number">Amount</span>
+                    <span class="cart-product-cost">Cost</span>
+                </li>
+
+            </ul>
+            <!-- block for added to cart products -->
+            <input type="checkbox" class="checkbox">
+            <!-- total cost of purchase -->
+            <div id="total-cost" class="total-cost"></div>
+        </div>
+        <!--end of block for added to cart products -->
+    </div>
+    <!-- end of container block -->
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>

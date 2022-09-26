@@ -1,0 +1,135 @@
+/* normilizing behaviour of elements' size */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    background: url('../images/bg.png') center no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 980px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(2, 2, 2, 0.5);
+}
+
+.block-title {
+    margin-bottom: 20px;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.products-block,
+.action-block,
+.cart-block {
+    max-width: 400px;
+    margin: 0 auto 30px auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.product:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.product-photo {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.product-name {
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.product-price {
+    margin-left: auto;
+}
+
+.action-block {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.product-dropdown,
+.product-number,
+.add-to-cart-button {
+    padding: 5px 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 3px;
+}
+
+.product-dropdown {
+    width: 150px;
+}
+
+.add-to-cart-button {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.add-to-cart-button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 1);
+}
+.cart-block {
+    display: none;
+}
+
+.cart-table {
+    list-style: none;
+}
+
+.cart-product:first-child, .cart-product:last-child {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #000;
+}
+
+.cart-product {
+    font-weight: bold;
+    display: flex;
+}
+
+.cart-product-name {
+    width: 200px;
+}
+
+.cart-product-number {
+    font-weight: normal;
+    margin-right: 20px;
+}
+
+.cart-product-cost {
+    margin-left: auto;
+}
+
+.total-cost, .checkbox {
+    font-weight: bold;
+    text-align: right;
+}
+
